@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Drum Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="titolo">
+        <h1>JS Drum Machine</h1> 
+    </div>
+<div class="container-flex">
+
+    <div class="container">
+        <div class="grid">
+            <!-- row1 --> 
+            <div onclick="kickRock1Audio.play()" data-type="rock-kick-1" class="grid-item kick rock1">Rock-kick-1</div>
+            <div onclick="kickRock2Audio.play()" data-type="rock-kick-2" class="grid-item kick rock2">Rock-kick-2</div>
+            <div onclick="kickStudioSound.play()"  data-type="studio-kick-1" class="grid-item kick studio">studio-kick-1</div>
+            <div  onclick="clapSound.play()" data-type="clap" class="grid-item clap">Clap</div>
+            <!-- row2 --> 
+            <div onclick="openHatSound.play()" data-type="pedal-hi-hat-1" class="grid-item hi-hat open">open-hi-hat-1</div>
+            <div onclick="closedHat1Sound.play()" data-type="closed-hi-hat-1" class="grid-item hi-hat closed1">closed-hi-hat-1</div>
+            <div onclick="closedHat2Sound.play()" data-type="closed-hi-hat-2"class="grid-item hi-hat closed2">closed hi-hat-2</div>
+            <div onclick="cowbellSound1.play()" data-type="cowbell-1" class="grid-item cowbell cowbell1">cowbell-1</div>
+            <!-- row3 --> 
+            <div onclick="crashSound1.play()" data-type="crash-cymbal-1" class="grid-item crash crash1">Crash-1</div>
+            <div onclick="crashSound2.play()" data-type="crash-cymbal-2" class="grid-item crash crash2">cymbal-2</div>         
+            <div onclick="crashSound3.play()" data-type="crash-cymbal-3" class="grid-item crash crash3">cymbal-3</div>
+            <div onclick="cowbellSound2.play()" data-type="cowbell-2" class="grid-item cowbell cowbell2">cowbell-2</div>
+            <!-- row4 --> 
+            <div  onclick="tomSound1.play()" data-type="low-tom-1" class="grid-item low perc1">low-tom-1</div>
+            <div onclick="tomSound2.play()" data-type="low-tom-2" class="grid-item low perc2">low-tom-2</div>
+            <div onclick="bongoSound.play()" data-type="low-bongo" class="grid-item low perc3">low-bongo</div>
+            <div onclick="splashCrashSound.play()" data-type="splash-cymbal" class="grid-item crash splash">splash cymbal</div>
+        </div>
+        
+    </div>
+    <div class="container">
+       <div class="player">
+            <h3 class="statoPlayer">In play</h3>
+            <hr class="hr">
+            <button id="play" class="btn"><i class="fa fa-play-circle-o"></i></button>
+            <button id="stop"  class="btn "><i class="fa fa-stop-circle"></i></button>
+            <button id="pause"  class="btn"><i class="fa fa-pause-circle-o"></i></button>
+            <button id="record"  class="btn"><i class="fa fa-circle" aria-hidden="true"></i></button>
+            <h1 class="recText hidden">Recording...</h1> 
+       </div>
+   </div>
+   
+</div>    
+
+</body>
+</html>

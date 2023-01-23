@@ -1,0 +1,120 @@
+
+*{
+    box-sizing: border-box;
+     
+}
+body{
+    background-image:url("https://www.all4officesrl.it/wp-content/uploads/2018/04/scaricare-legno-sfondo-1024x576.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;  
+          
+}
+
+.titolo{
+    margin: auto;
+    text-align: center;
+}
+.container{     
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.grid{
+    border: 2px double rgb(25, 151, 0);
+    border-radius: 5px;
+    padding: 15px;
+    margin: auto;     
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px;
+    background-color: rgba(0, 0, 0, 0.993);
+    box-shadow: 5px 5px 5px #181515bd;
+ 
+}
+.grid-item{
+    border: 1px solid rgb(25, 151, 0);
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    width: 70px;
+    background-color: rgb(18, 172, 69);
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+    font-weight: bolder;
+}
+.btn{
+    font-size: 20px;
+    margin: 10px;
+    border: 1px solid rgb(25, 151, 0);    
+}
+
+.fa-circle{
+    color: red;
+}
+.player{
+    border: 2px double rgb(25, 151, 0);
+    text-align: center;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 5px 5px 5px #181515bd;
+    
+    
+}
+.statoPlayer{    
+    color: rgb(25, 151, 0);        
+}
+
+.kick{
+    background: radial-gradient(circle, rgb(243, 175, 130) 5%,rgb(112, 50, 0));
+}
+.clap{
+    background: radial-gradient(circle, rgb(243, 233, 179) 1%,rgb(21, 173, 1));
+}     
+.hi-hat{
+    background: radial-gradient(circle, rgb(243, 233, 179) 5%,rgb(255, 238, 0));
+}
+.cowbell{
+    background: radial-gradient(circle, rgb(241, 181, 181) 0.5%,rgb(255, 0, 0));
+}
+.crash{
+    background: radial-gradient(circle, white 5%,rgb(0, 148, 247) 85%);   
+}
+.low{
+    background: radial-gradient(circle, white 0.5%,rgb(126, 25, 0));
+    
+}
+
+.lightBorder{
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #feffb1;
+    transform: scale(0.95);
+    transition-duration: 0.3s;    
+}
+.lightPlay{
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #feffb1;
+    transform: scale(0.95);
+    transition-duration: 0.3s;    
+}
+ 
+.hr{color: green;}
+
+ .container-flex{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+ .recText{
+    color: red;
+ }
+ .hidden{
+    display: none;
+ }
+
